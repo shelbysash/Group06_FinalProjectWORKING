@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Group6_FinalProject
+namespace Group06_FinalProject
 {
 
 
-    public partial class LeetCodeProblem_4
+    public partial class HardLeetCodeProblem
     {
 
         /// <summary>

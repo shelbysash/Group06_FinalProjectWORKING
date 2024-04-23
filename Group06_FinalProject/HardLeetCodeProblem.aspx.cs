@@ -1,24 +1,14 @@
-﻿/*
-# Name: Shelby Sash
-# email: sashsk@mail.uc.edu
-# Assignment Title: Final Project
-# Due Date: April 23, 2024
-# Course: IS 3050
-# Semester/Year: Spring 2024
-# Brief Description: This hard level leet code problem creates 2 arrays and finds the median between them. 
-# Citations: https://www.geeksforgeeks.org/median-two-sorted-arrays-different-sizes-ologminn-m/ , https://chat.openai.com/ , https://stackoverflow.com/questions/10180930/asp-net-open-new-webform-on-click-of-button
-# Anything else that's relevant: N/A
-*/
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static System.Net.Mime.MediaTypeNames;
 
-namespace Group6_FinalProject
+namespace Group06_FinalProject
 {
-    public partial class LeetCodeProblem_4 : System.Web.UI.Page
+    public partial class HardLeetCodeProblem : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,12 +25,11 @@ namespace Group6_FinalProject
                 median = findMedianSortedArrays(ref b, m, ref a, n);
 
             // Display the arrays and median
-
             lblArrayA.Text = "Array A: " + string.Join(", ", a);
             lblArrayB.Text = "Array B: " + string.Join(", ", b);
             lblMedian.Text = "The median is: " + median.ToString();
-        }
 
+        }
         // Function to find max
         static int maximum(int a, int b)
         {
@@ -132,7 +121,6 @@ namespace Group6_FinalProject
             return (median + minimum(a[i], b[j])) / 2.0;
             // This code is contributed by Manish Shaw
             // (manishshaw1)
-
+        }
         }
     }
-}

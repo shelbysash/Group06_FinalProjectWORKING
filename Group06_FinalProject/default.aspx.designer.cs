@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Group6_FinalProject
+namespace Group06_FinalProject
 {
 
 
